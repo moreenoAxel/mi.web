@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Axel.dev</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+</head>
+<body class="font-sans bg-gray-100 text-gray-800">
+    <nav class="bg-white shadow-md fixed w-full z-10 top-0">
+        <div class="container mx-auto px-6 py-3 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-blue-600">Develop.axel</a>
+            <div class="hidden md:flex space-x-6">
+                <a href="#inicio" class="text-gray-600 hover:text-blue-600 transition">Inicio</a>
+                <a href="#servicios" class="text-gray-600 hover:text-blue-600 transition">Servicios</a>
+                <a href="#contacto" class="text-gray-600 hover:text-blue-600 transition">Contacto</a>
+            </div>
+
+            <button id="menu-btn" name="menu-btn" class="md:hidden text-gray-600 focus:outline-none">
+                 <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                </svg>
+            </button>
+        </div>
+                 <!-- Menú desplegable (visible solo en móviles cuando está activo) -->
+            <div id="mobile-menu" name="mobile-menu" class="hidden flex flex-col md:hidden space-y-2 px-6 pb-3">
+                <a href="#inicio" class="text-gray-600 hover:text-blue-600 transition">Inicio</a>
+                <a href="#servicios" class="text-gray-600 hover:text-blue-600 transition">Servicios</a>
+                <a href="#contacto" class="text-gray-600 hover:text-blue-600 transition">Contacto</a>
+            </div>
+    </nav>
+
+    <!-- Sección de Inicio -->
+    <section id="inicio" class="min-h-screen bg-gradient-to-r from-blue-500 to-blue-700 py-20 text-center text-white">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-5xl font-bold mb-4">Bienvenido a Develop.axel</h2>
+            <p class="text-xl mb-6">
+                Creamos soluciones digitales que transforman tus ideas en realidades.
+            </p>
+            
+            <!-- Nueva Sección ¿Qué somos y qué hacemos? -->
+            <div class="mt-16 flex flex-col md:flex-row justify-center items-center space-x-8 text-center md:text-left">
+                <!-- Texto -->
+                <div class="md:w-1/2 text-white">
+                    <h3 class="text-3xl font-semibold mb-4">¿Qué somos y qué hacemos?</h3>
+                    <p class="text-lg mb-6">
+                        Somos un equipo de desarrolladores y diseñadores apasionados por la tecnología y la creatividad. Creamos soluciones digitales personalizadas para ayudar a las empresas a mejorar su presencia online, optimizar sus procesos y alcanzar el éxito en el mundo digital.
+                    </p>
+                </div>
+                
+                <!-- Imagen -->
+                <div class="md:w-1/2">
+                    <img src="Images/logo instagram.jpg" alt="Imagen representativa de Axel.dev" class="rounded-lg shadow-lg">
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- Header -->
+    
+
+    <!-- Servicios -->
+    <section id="servicios" class="py-12 px-6 bg-gray-100">
+        <h2 class="text-4xl font-bold text-center mb-8 text-blue-600">Nuestros Servicios</h2>
+    
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <!-- Servicio 1: Landing Page -->
+            <div class="servicio bg-white rounded-lg shadow-md p-6 text-center">
+                <div class="icono mb-4">
+                    <i class="fas fa-clipboard-list text-4xl text-blue-600"></i>
+                </div>
+                <h3 class="text-xl font-semibold text-gray-700">Landing Page</h3>
+                <p class="text-gray-600 mt-2">
+                    Si estás comenzando con tu negocio, una Landing Page es ideal para captar clientes y ofrecer productos o servicios específicos.
+                </p>
+                <img src="Images/landing-website.png" alt="Diseño Landing Page" class="imagen-servicio rounded-lg shadow-lg">
+                <a href="#contacto" class="text-blue-600 mt-4 inline-block">¡Solicita tu Landing Page!</a>
+            </div>
+    
+            <!-- Servicio 2: E-commerce -->
+            <div class="servicio bg-white rounded-lg shadow-md p-6 text-center">
+                <div class="icono mb-4">
+                    <i class="fas fa-shopping-cart text-4xl text-blue-600"></i>
+                </div>
+                <h3 class="text-xl font-semibold text-gray-700">Desarrollo E-commerce</h3>
+                <p class="text-gray-600 mt-2">
+                    Con una tienda online personalizada, podrás vender tus productos en todo el mundo, con un diseño atractivo y procesos de pago seguros.
+                </p>
+                <img src="Images/e-commerce.png" alt="Tienda Online" class="imagen-servicio rounded-lg shadow-lg">
+                <a href="#contacto" class="text-blue-600 mt-4 inline-block">¡Crea tu tienda online!</a>
+            </div>
+    
+            <!-- Servicio 3: Blog o Página Web Corporativa -->
+            <div class="servicio bg-white rounded-lg shadow-md p-6 text-center">
+                <div class="icono mb-4">
+                    <i class="fas fa-building text-4xl text-blue-600"></i>
+                </div>
+                <h3 class="text-xl font-semibold text-gray-700">Blog o Página Web Corporativa</h3>
+                <p class="text-gray-600 mt-2">
+                    Desarrollamos páginas web profesionales para empresas que deseen compartir contenido, noticias o información relevante con sus clientes.
+                </p>
+                <img src="Images/blog.png" alt="Página Web Corporativa" class=" imagen-servicio mt-4 rounded-lg shadow-lg">
+                <a href="#contacto" class="text-blue-600 mt-4 inline-block">¡Habla con nosotros!</a>
+            </div>
+        </div>
+    
+        <!-- CTA -->
+        <div class="mt-12 text-center">
+            <h3 class="text-2xl font-semibold text-blue-600 mb-4">¿Estás listo para comenzar?</h3>
+            <p class="text-gray-600 mb-4">Contacta con nosotros y comencemos a crear tu proyecto web ideal.</p>
+            <a href="#contacto" class="bg-blue-600 text-white py-2 px-6 rounded-lg">Contáctanos</a>
+        </div>
+    </section>
+
+    <section id="contacto" class="min-h-screen bg-gradient-to-r from-blue-500 to-blue-700 py-20 text-center text-white">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-4xl font-bold mb-8">¡Ponte en contacto con nosotros!</h2>
+            <p class="text-lg mb-12">
+                Si tienes alguna pregunta o necesitas más información, no dudes en contactarnos. ¡Estamos para ayudarte!
+            </p>
+    
+            <!-- Información de contacto -->
+            <div class="text-lg mb-12">
+                <p><strong>Correo Electrónico:</strong> devaxel4@gmail.com</p>
+                <p><strong>Teléfono:</strong> +54 2344-420146</p>
+            </div>
+    
+            <!-- Redes Sociales -->
+            <div class="flex justify-center mt-4">
+                <a href="https://www.instagram.com/develop.axel/" target="_blank" class="mx-4 text-white hover:text-gray-300">
+                   <i class="fab fa-instagram fa-2x"></i> Instagram
+                </a>
+                <a href="https://www.linkedin.com/in/axelmoreno" target="_blank" class="mx-4 text-white hover:text-gray-300">
+                    <i class="fab fa-linkedin fa-2x"></i> LinkedIn
+                </a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer class=" bg-gray-800 text-white py-6 mt-10">
+        <div class="container mx-auto text-center">
+            <p class="mb-4">&copy; 2025 Develop.axel Hecho con 💻 y ☕. Todos los derechos reservados.</p>
+            <div class="flex justify-center space-x-4">
+                <a href="https://www.instagram.com/develop.axel/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="bg-pink-600 hover:bg-pink-700 text-white font-bold py-2 px-4 rounded-full transition duration-300 flex items-center space-x-2">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="h-5 w-5" viewBox="0 0 16 16">
+                    <path d="M8 0C5.8 0 5.5 0 4.7.1c-.8.1-1.4.3-2 .6-.7.4-1.2.8-1.7 1.3-.5.5-.9 1-1.3 1.7-.3.6-.5 1.3-.6 2C0 5.5 0 5.8 0 8s0 2.5.1 3.3c.1.8.3 1.4.6 2 .4.7.8 1.2 1.3 1.7.5.5 1 1 1.7 1.3.6.3 1.3.5 2 .6C10.5 0 10.2 0 8 0zm0 1.4c2.5 0 2.7 0 3.6.1.8.1 1.3.3 1.6.5.4.2.7.4 1 .8.4.3.6.6.8 1 .2.3.4.4.8.5 1.6.1.8.1 1 .1 3.6s0 2.7-.1 3.6c-.1.8-.3 1.3-.5 1.6-.2.4-.4.7-.8 1-.3.4-.6.6-1 .8-.3.2-.8.4-1.6.5-.8.1-1 .1-3.6.1s-2.7 0-3.6-.1c-.8-.1-1.3-.3-1.6-.5-.4-.2-.7-.4-1-.8-.4-.3-.6-.6-.8-1-.2-.3-.4-.8-.5-1.6C1.4 10.7 1.4 10.5 1.4 8s0-2.7.1-3.6c.1-.8.3-1.3.5-1.6.2-.4.4-.7.8-1 .3-.4.6-.6 1-.8.3-.2.8-.4 1.6-.5.8-.1 1-.1 3.6-.1zM8 3.9a4.1 4.1 0 1 0 0 8.2 4.1 4.1 0 0 0 0-8.2zM8 6a2 2 0 1 1 0 4 2 2 0 0 1 0-4zm4.9-1a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"></path>
+                </svg>
+                <span>Instagram</span>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
